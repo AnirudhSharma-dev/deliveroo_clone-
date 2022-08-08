@@ -19,6 +19,7 @@ import {
 } from "react-native-heroicons/outline";
 import { DELIVERUBLU, GREY } from "../colors";
 import Categories from "../components/Categories";
+import FeaturedRow from "../components/FeaturedRow";
 const HomeScreen = () => {
   const navigation = useNavigation();
   useLayoutEffect(() => {
@@ -30,7 +31,12 @@ const HomeScreen = () => {
     <SafeAreaView
       className="bg-white pt-4"
       style={{
-        paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+        paddingTop:
+          Platform.OS === "android"
+            ? StatusBar.currentHeight
+            : Platform.OS === "web"
+            ? 10
+            : 0,
       }}
     >
       {/* Header */}
@@ -72,6 +78,23 @@ const HomeScreen = () => {
         {/* Categories */}
         <Categories />
         {/* Featured */}
+        <FeaturedRow
+          id="123"
+          title="Featured"
+          description="Paid placements from our parnters"
+        />
+        {/* Tasty Discounts */}
+        <FeaturedRow
+          id="1234"
+          title="Tasty Discounts"
+          description="Everyone's been enjoying those juicy discounts!"
+        />
+        {/* Offers near you */}
+        <FeaturedRow
+          id="12345"
+          title="Offers near you!"
+          description="Why not support your local restaurants tonight!"
+        />
       </ScrollView>
     </SafeAreaView>
   );
