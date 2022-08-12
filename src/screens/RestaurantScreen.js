@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { StatusBar } from "expo-status-bar";
 import React, { useLayoutEffect } from "react";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { urlFor } from "../../sanity";
@@ -69,7 +68,6 @@ const RestaurantScreen = () => {
     <>
       <BasketIcon />
       <ScrollView>
-        <StatusBar style="light" />
         <View className="relative">
           <Image
             source={{ uri: urlFor(imgUrl).url() }}
