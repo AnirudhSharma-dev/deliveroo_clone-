@@ -22,6 +22,7 @@ const Categories = () => {
       contentContainerStyle={{
         paddingTop: 10,
         paddingBottom: 15,
+        paddingLeft: 10,
       }}
     >
       {/* CategoryCard */}
