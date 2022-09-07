@@ -73,7 +73,7 @@ If facing any issue while running project, install specific versions of tools us
   </div>
 </div>
 
-### 3. Cart Screens:
+### 3. Cart Screen:
 
 <div align="center">
   <div style="display: flex; align-items: flex-start;">
@@ -85,7 +85,7 @@ If facing any issue while running project, install specific versions of tools us
 
 <div align="center">
   <div style="display: flex; align-items: flex-start;">
-    <img src = "images/OrderPlacedAni.jpeg" height="360" width="180"/>
+    <img src = "images/OrderPlaceAni.jpeg" height="360" width="180"/>
   </div>
 </div>
 
